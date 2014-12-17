@@ -1,7 +1,9 @@
 val computer = <cfm:ItemComputer>;
 val printer = <cfm:ItemPrinter>;
+val plasticsheet = <MineFactoryReloaded:plastic.sheet>;
+val pcircuit = <PneumaticCraft:printedCircuitBoard>;
 
 recipes.remove(computer);
 recipes.remove(printer);
 
-recipes.addShaped(printer, [[<MineFactoryReloaded:item.mfr.plastic.sheet>,<minecraft:paper>,<MineFactoryReloaded:item.mfr.plastic.sheet>], [<MineFactoryReloaded:item.mfr.plastic.sheet>,<PneumaticCraft:printedCircuitBoard>,<MineFactoryReloaded:item.mfr.plastic.sheet>], [<MineFactoryReloaded:item.mfr.plastic.sheet>,<MineFactoryReloaded:item.mfr.plastic.sheet>,<MineFactoryReloaded:item.mfr.plastic.sheet>]]);
+recipes.addShaped(printer, [[plasticsheet,<minecraft:paper>,plasticsheet], [plasticsheet,pcircuit,plasticsheet], [plasticsheet,plasticsheet,plasticsheet]]);

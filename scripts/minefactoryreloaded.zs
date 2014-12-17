@@ -1,5 +1,8 @@
 val stone = <ore:stone>;
+val plasticsheet = <MineFactoryReloaded:plastic.sheet>;
+val pcircuit = <PneumaticCraft:printedCircuitBoard>;
+val machineblock = <MineFactoryReloaded:machineblock>;
 
-recipes.removeShaped(<MineFactoryReloaded:tile.mfr.machineblock>);
-recipes.addShaped(<MineFactoryReloaded:tile.mfr.machineblock>, [[<MineFactoryReloaded:item.mfr.plastic.sheet>,<MineFactoryReloaded:item.mfr.plastic.sheet>,<MineFactoryReloaded:item.mfr.plastic.sheet>], [stone,<PneumaticCraft:printedCircuitBoard>,stone]]);
+recipes.removeShaped(machineblock);
+recipes.addShaped(machineblock, [[plasticsheet,plasticsheet,plasticsheet], [stone,pcircuit,stone]]);
 print("MFR Scripts Loaded");
